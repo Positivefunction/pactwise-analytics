@@ -49,6 +49,7 @@ const riskStyles: Record<string, string> = {
 
 export default function Agreements() {
   const [view, setView] = useState<"list" | "timeline">("list");
+  const navigate = useNavigate();
 
   return (
     <div className="space-y-6">
