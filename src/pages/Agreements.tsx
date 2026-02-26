@@ -1,5 +1,6 @@
 import { FileText, Upload, Filter, Calendar, Building2, MapPin } from "lucide-react";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const mockAgreements = [
   {
@@ -48,6 +49,7 @@ const riskStyles: Record<string, string> = {
 
 export default function Agreements() {
   const [view, setView] = useState<"list" | "timeline">("list");
+  const navigate = useNavigate();
 
   return (
     <div className="space-y-6">
@@ -101,6 +103,7 @@ export default function Agreements() {
         {mockAgreements.map((a) => (
           <div
             key={a.id}
+            onClick={() => navigate(`/agreements/${a.id}`)}
             className="glass-panel rounded-lg p-5 hover:border-glow transition-all cursor-pointer animate-fade-in"
           >
             <div className="flex items-start justify-between gap-4">

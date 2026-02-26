@@ -13,6 +13,7 @@ import CostCalculator from "./pages/CostCalculator";
 import Alerts from "./pages/Alerts";
 import RiskMonitor from "./pages/RiskMonitor";
 import SettingsPage from "./pages/Settings";
+import AgreementDetail from "./pages/AgreementDetail";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -27,6 +28,7 @@ const App = () => (
           <Route element={<AppLayout />}>
             <Route path="/" element={<Dashboard />} />
             <Route path="/agreements" element={<Agreements />} />
+            <Route path="/agreements/:id" element={<AgreementDetail />} />
             <Route path="/compare" element={<Compare />} />
             <Route path="/search" element={<AISearch />} />
             <Route path="/analytics" element={<Analytics />} />
