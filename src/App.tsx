@@ -13,6 +13,7 @@ import CostCalculator from "./pages/CostCalculator";
 import Alerts from "./pages/Alerts";
 import RiskMonitor from "./pages/RiskMonitor";
 import SettingsPage from "./pages/Settings";
+import AgreementDetail from "./pages/AgreementDetail";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
