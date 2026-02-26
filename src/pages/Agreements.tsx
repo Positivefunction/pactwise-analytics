@@ -103,6 +103,7 @@ export default function Agreements() {
         {mockAgreements.map((a) => (
           <div
             key={a.id}
+            onClick={() => navigate(`/agreements/${a.id}`)}
             className="glass-panel rounded-lg p-5 hover:border-glow transition-all cursor-pointer animate-fade-in"
           >
             <div className="flex items-start justify-between gap-4">
