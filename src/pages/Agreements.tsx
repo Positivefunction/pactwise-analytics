@@ -1,5 +1,6 @@
 import { FileText, Upload, Filter, Calendar, Building2, MapPin } from "lucide-react";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const mockAgreements = [
   {
