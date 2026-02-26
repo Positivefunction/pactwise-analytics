@@ -90,14 +90,14 @@ const mockAgreement = {
   // Manpower flexibility
   manpowerFlexibility: {
     detected: [
-      { aspect: "Multi-skilling Requirement", status: "detected", detail: "Clause 22: All Grade I–III workers must acquire competency in minimum 2 adjacent job roles within 18 months." },
-      { aspect: "Redeployment Flexibility", status: "detected", detail: "Clause 24: Management may redeploy workers across departments based on operational needs without prior consent." },
-      { aspect: "ALTS Methodology", status: "detected", detail: "Clause 18: Productivity incentive restructured from output-based DPI to Added Labour Time Saved methodology." },
-      { aspect: "Engagement Time Definitions", status: "detected", detail: "Clause 15: Effective working time redefined as 7.5 hours excluding meal break of 30 minutes." },
-      { aspect: "Machine Utilization Norms", status: "detected", detail: "Clause 19: Minimum machine utilization target of 85% per shift with escalation for consistent underperformance." },
-      { aspect: "Production Norm References", status: "detected", detail: "Clause 20: Base production norms revised upward by 8% from 2021 baseline." },
-      { aspect: "Indirect Workforce Flexibility", status: "partial", detail: "Clause 26: Support functions may be staffed through internal rotation. No explicit flexibility for indirect outsourcing." },
-      { aspect: "Outsourcing Permissions", status: "not_detected", detail: "Not specified in document. Settlement is silent on outsourcing of core operations." },
+      { aspect: "Multi-skilling Requirement", status: "detected" as const, detail: "Clause 22: All Grade I–III workers must acquire competency in minimum 2 adjacent job roles within 18 months." },
+      { aspect: "Redeployment Flexibility", status: "detected" as const, detail: "Clause 24: Management may redeploy workers across departments based on operational needs without prior consent." },
+      { aspect: "ALTS Methodology", status: "detected" as const, detail: "Clause 18: Productivity incentive restructured from output-based DPI to Added Labour Time Saved methodology." },
+      { aspect: "Engagement Time Definitions", status: "detected" as const, detail: "Clause 15: Effective working time redefined as 7.5 hours excluding meal break of 30 minutes." },
+      { aspect: "Machine Utilization Norms", status: "detected" as const, detail: "Clause 19: Minimum machine utilization target of 85% per shift with escalation for consistent underperformance." },
+      { aspect: "Production Norm References", status: "detected" as const, detail: "Clause 20: Base production norms revised upward by 8% from 2021 baseline." },
+      { aspect: "Indirect Workforce Flexibility", status: "partial" as const, detail: "Clause 26: Support functions may be staffed through internal rotation. No explicit flexibility for indirect outsourcing." },
+      { aspect: "Outsourcing Permissions", status: "not_detected" as const, detail: "Not specified in document. Settlement is silent on outsourcing of core operations." },
     ],
     classifications: [
       { label: "Employer flexibility strengthened", direction: "up" as const },
